@@ -1,9 +1,15 @@
 name: Backend Continuous Integration
 
 on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'starter/backend/**'
+
   pull_request:
     branches:
-      - main
+      - master
     paths:
       - 'starter/backend/**'
 
